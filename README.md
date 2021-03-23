@@ -1,6 +1,6 @@
 # Huawei-N5368X-crawler
 
-NEW 23.3.2021: V2 to support latest firware used by Finnish operator DNA. This script uses a separate config file (huawei.ini), make sure your settings are done right. If you used the previous version (V1), and you want to continue the old measurements, use need to rename measurements according the new api names. This is done propably easiest in influx by querying:
+NEW 23.3.2021: V2 to support latest firmware used by Finnish operator DNA. This script uses a separate config file (huawei.ini), make sure your settings are done right. If you used the previous version (V1), and you want to continue the old measurements, use need to rename measurements according the new api names. This is done propably easiest in influx by querying:
 * select * into "traffic-statistics" from uptime group by *
 * select * into "traffic-statistics" from queryModemMonitorWithName group by *
 * select * into "status" from getsiglevel group by *
