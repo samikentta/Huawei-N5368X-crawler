@@ -130,7 +130,7 @@ def login(client, server, user, password):
 
     salt = ET.fromstring(response.text)[0].text
     servernonce = ET.fromstring(response.text)[2].text
-    iterations = ET.fromstring(response.text)[4].text
+    iterations = str(ET.fromstring(response.text)[4].text)
 
     logging.debug(salt)
     logging.debug(servernonce)
