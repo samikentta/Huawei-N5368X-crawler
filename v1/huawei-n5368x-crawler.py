@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+
+# Support for legacy firmware
+
 import sys
 import uuid
 import hashlib
