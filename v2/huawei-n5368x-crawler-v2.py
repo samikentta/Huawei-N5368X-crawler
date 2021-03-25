@@ -139,7 +139,7 @@ def login(client, server, user, password):
  
     # Get client proof 
     clientproof = get_client_proof(
-        clientnonce, servernonce, password, salt, 100).decode('UTF-8')
+        clientnonce, servernonce, password, salt, int(iterations)).decode('UTF-8')
     logging.debug(clientproof)
     # Authenticate
     headers = {'__RequestVerificationToken': response.headers['__RequestVerificationToken']}
